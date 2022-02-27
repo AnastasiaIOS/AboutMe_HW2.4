@@ -16,10 +16,6 @@ class ViewController: UIViewController {
     private let password = "12345"
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
@@ -32,14 +28,14 @@ class ViewController: UIViewController {
         if userNameTF.text != user || passwordTF.text != password {
             //Alert(title: "", message: "", textField: )
             let alert = UIAlertController(title: "Attention!", message: "User name or password is not correct", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default) { action in
-                // обработка нажатия кнопки
-            })
-            self.present(alert, animated: true)
-            
-            if passwordTF.text != password {
-                passwordTF.text = ""
+            let action = UIAlertAction(title: "OK", style: .default) {_ in
+                self.passwordTF.text = ""
             }
+            alert.addAction(action)
+            
+            /*if passwordTF.text != password {
+                passwordTF.text = ""
+            }*/
         }
         
         
