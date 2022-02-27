@@ -8,43 +8,39 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+   
+// MARK: - IB OUTLETS
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
+// MARK: - PRIVATE PROPERTIES
     private let user = "user"
     private let password = "12345"
     
-    
+// MARK: - NAVIGATIONS
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
         welcomeVC.user = user
     }
     
     
     @IBAction func loginButton() {
-        
         if userNameTF.text != user || passwordTF.text != password {
-            
             showAlert(title: "Attention!", message: "User name or password is not correct")
         }
     }
     
     // Инф сообщение о логине
     @IBAction func showAlertAboutUsername() {
-        
         showAlert(title: "Oooops!", message: "Username = user")
     }
     
     //Инф сообщение о пароле
     @IBAction func showAlertAboutPassword() {
-        
         showAlert(title: "Yhoho!", message: "password = 12345")
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
-        
         passwordTF.text = ""
         userNameTF.text = ""
     }
@@ -57,12 +53,12 @@ class ViewController: UIViewController {
     
     private func showAlert(title: String, message: String) {
         
-        let allert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default) {_ in
             self.passwordTF.text = ""
         }
-        allert.addAction(action)
-        present(allert, animated: true)
+        alert.addAction(action)
+        present(alert, animated: true)
         
     }
 }

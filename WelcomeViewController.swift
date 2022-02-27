@@ -12,6 +12,10 @@ class WelcomeViewController: UIViewController {
     @IBOutlet var labelForWelcome: UILabel!
     var user = ""
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        labelForWelcome.text = "Welcome, \(user)!"
+    }
     
     
  // Кнопка LOGOUT
