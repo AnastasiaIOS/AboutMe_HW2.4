@@ -27,42 +27,20 @@ class ViewController: UIViewController {
         
         if userNameTF.text != user || passwordTF.text != password {
             
-            let alert = UIAlertController(title: "Attention!", message: "User name or password is not correct", preferredStyle: .alert)
-            let action = UIAlertAction(title: "OK", style: .default) {_ in
-                self.passwordTF.text = ""
-            }
-            alert.addAction(action)
-            
-            /*if passwordTF.text != password {
-                passwordTF.text = ""
-            }*/
+            showAlert(title: "Attention!", message: "User name or password is not correct")
         }
-        
-        
     }
     
     // Инф сообщение о логине
     @IBAction func showAlertAboutUsername() {
         
-        let alertUN = UIAlertController(title: "Oooops!",
-                                        message: "Username = user",
-                                        preferredStyle: .alert)
-        alertUN.addAction(UIAlertAction(title: "OK", style: .default) { action in
-            // обработка нажатия кнопки
-        })
-        self.present(alertUN, animated: true)
+        showAlert(title: "Oooops!", message: "Username = user")
     }
     
     //Инф сообщение о пароле
     @IBAction func showAlertAboutPassword() {
         
-        let alertPassword = UIAlertController(title: "Yhoho!",
-                                              message: "Password = 12345",
-                                              preferredStyle: .alert)
-        alertPassword.addAction(UIAlertAction(title: "OK", style: .default) { action in
-            // обработка нажатия кнопки
-        })
-        self.present(alertPassword, animated: true)
+        showAlert(title: "Yhoho!", message: "password = 12345")
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
@@ -84,6 +62,8 @@ class ViewController: UIViewController {
             self.passwordTF.text = ""
         }
         allert.addAction(action)
+        present(allert, animated: true)
+        
     }
 }
 
