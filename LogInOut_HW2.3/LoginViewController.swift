@@ -77,10 +77,10 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
     
-    private func alertMax() {
+    private func showAlert(title: String, message: String) {
         
-        var allert = UIAlertController(title: String?, message: String?, preferredStyle: .alert)
-        var action = UIAlertAction(title: "OK", style: .default) {_ in
+        let allert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default) {_ in
             self.passwordTF.text = ""
         }
         allert.addAction(action)
