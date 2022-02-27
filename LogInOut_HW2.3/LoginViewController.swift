@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     @IBAction func loginButton() {
         
         if userNameTF.text != user || passwordTF.text != password {
-            //Alert(title: "", message: "", textField: )
+            
             let alert = UIAlertController(title: "Attention!", message: "User name or password is not correct", preferredStyle: .alert)
             let action = UIAlertAction(title: "OK", style: .default) {_ in
                 self.passwordTF.text = ""
@@ -74,6 +74,16 @@ class ViewController: UIViewController {
     // Метод для скрытия клавиатуры тапом по экрану
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super .touchesBegan(touches, with: event)
+        view.endEditing(true)
+    }
+    
+    private func alertMax() {
+        
+        var allert = UIAlertController(title: String?, message: String?, preferredStyle: .alert)
+        var action = UIAlertAction(title: "OK", style: .default) {_ in
+            self.passwordTF.text = ""
+        }
+        allert.addAction(action)
     }
 }
 
