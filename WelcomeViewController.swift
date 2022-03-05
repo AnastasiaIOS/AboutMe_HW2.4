@@ -10,7 +10,7 @@ import UIKit
 class WelcomeViewController: UIViewController {
 
     @IBOutlet var labelForWelcome: UILabel!
-    var user = "Lil"
+    var user = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()

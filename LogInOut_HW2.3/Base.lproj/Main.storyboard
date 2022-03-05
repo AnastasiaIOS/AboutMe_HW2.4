@@ -159,9 +159,11 @@
         <!--Tab Bar Controller-->
         <scene sceneID="3Qi-aG-7ZG">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wLM-W3-uOB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qEo-IL-Y73" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bRS-dD-Dyu">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -169,7 +171,6 @@
                         <segue destination="C2r-K2-ZJe" kind="relationship" relationship="viewControllers" id="JGr-e5-tsq"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wLM-W3-uOB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="785.04672897196258" y="77.105831533477328"/>
         </scene>
