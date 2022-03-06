@@ -18,11 +18,23 @@ class ViewController: UIViewController {
      let password = "12345"
     
 // MARK: - NAVIGATIONS
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.user = user
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
+  //      welcomeVC.user = user
+ //   }
     
+    
+    // MARK: Navigation
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            let tabBarController = segue.destination as! UITabBarController
+            ...
+             for viewController in viewControllers {
+                if let welcomeVC = viewController as? WelcomeViewController {
+                    
+                }
+            }
+            ...
+        }
     
     @IBAction func loginButton() {
         if userNameTF.text != user || passwordTF.text != password {

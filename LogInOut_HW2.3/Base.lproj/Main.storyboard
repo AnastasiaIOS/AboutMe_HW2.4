@@ -154,10 +154,10 @@
             </objects>
             <point key="canvasLocation" x="1591" y="77"/>
         </scene>
-        <!--View Controller-->
+        <!--About Me View Controller-->
         <scene sceneID="yJQ-5F-3NY">
             <objects>
-                <viewController id="D4w-Cp-zSO" sceneMemberID="viewController">
+                <viewController id="D4w-Cp-zSO" customClass="AboutMeViewController" customModule="LogInOut_HW2_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hde-7v-Cv0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -222,7 +222,7 @@
         <!--Контакты-->
         <scene sceneID="zKM-Bd-5Qn">
             <objects>
-                <viewController id="Lb2-k8-IiH" sceneMemberID="viewController">
+                <viewController id="Lb2-k8-IiH" customClass="ContactsViewController" customModule="LogInOut_HW2_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aHu-WS-Kjg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -242,13 +242,46 @@
                     <view key="view" contentMode="scaleToFill" id="0x3-LS-5TR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Lc-4a-KAT">
+                                <rect key="frame" x="114" y="340" width="93" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="nC1-dz-YLJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Выход"/>
+                                <connections>
+                                    <segue destination="F1g-7T-erx" kind="unwind" unwindAction="unwindFor:" id="e97-3I-dWJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmX-mO-d2l">
+                                <rect key="frame" x="41" y="76" width="238" height="127"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="127" id="jOb-C8-wpI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="cwd-fd-d5d"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cwd-fd-d5d" firstAttribute="trailing" secondItem="EmX-mO-d2l" secondAttribute="trailing" constant="41" id="5TQ-iy-II8"/>
+                            <constraint firstItem="1Lc-4a-KAT" firstAttribute="leading" secondItem="cwd-fd-d5d" secondAttribute="leading" constant="114" id="IQX-aX-0tM"/>
+                            <constraint firstItem="EmX-mO-d2l" firstAttribute="leading" secondItem="cwd-fd-d5d" secondAttribute="leading" constant="41" id="LeL-Xy-dCe"/>
+                            <constraint firstItem="1Lc-4a-KAT" firstAttribute="top" secondItem="EmX-mO-d2l" secondAttribute="bottom" constant="137" id="WYy-Nq-vwV"/>
+                            <constraint firstItem="cwd-fd-d5d" firstAttribute="trailing" secondItem="1Lc-4a-KAT" secondAttribute="trailing" constant="113" id="chU-bv-DCQ"/>
+                            <constraint firstItem="EmX-mO-d2l" firstAttribute="centerX" secondItem="0x3-LS-5TR" secondAttribute="centerX" id="foC-68-g0b"/>
+                            <constraint firstItem="EmX-mO-d2l" firstAttribute="top" secondItem="cwd-fd-d5d" secondAttribute="top" constant="76" id="y5G-q8-96K"/>
+                            <constraint firstItem="cwd-fd-d5d" firstAttribute="bottom" secondItem="1Lc-4a-KAT" secondAttribute="bottom" constant="177" id="zQn-Ft-dPh"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rWd-dQ-kRI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="F1g-7T-erx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3366" y="914"/>
+            <point key="canvasLocation" x="3365.625" y="913.73239436619724"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3Qi-aG-7ZG">
