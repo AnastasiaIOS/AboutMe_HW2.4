@@ -15,9 +15,9 @@ class ViewController: UIViewController {
     
 // MARK: - PRIVATE PROPERTIES
     
-    let abc = appFriend(person: Person)
-    private let user = appFriend.user
-    private let password = "12345"
+   
+     let user = AppFriend.createApp().login
+     let password = AppFriend.createApp().password
     
 // MARK: - NAVIGATIONS
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -33,16 +33,17 @@ class ViewController: UIViewController {
             guard let viewControllers = tabBarController.viewControllers else { return }
             
              for viewController in viewControllers {
-                if let welcomeVC = viewController as? WelcomeViewController {
-                    
-                }
+                 if let welcomeVC = viewController as? WelcomeViewController {
+                    welcomeVC.user = user
+                } else if 
+                 
             }
-            ...
+           
         }
     
     @IBAction func loginButton() {
         if userNameTF.text != user || passwordTF.text != password {
-            showAlert(title: "Attention!", message: "User name or password is not correct")
+            showAlert(title: "Attention!", message: "Username or password is not correct")
         }
     }
     

@@ -6,12 +6,12 @@
 //
 
 struct AppFriend {
-    let user: String
+    let login: String
     let password: String
     let person: Person
     
     static func createApp() -> AppFriend {
-        AppFriend(user: "user", password: "12345", person: Person.getPerson())
+        AppFriend(login: "user", password: "12345", person: Person.getPerson())
     }
 }
 

@@ -14,7 +14,7 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        labelForWelcome.text = "Welcome, \(user)!"
+        labelForWelcome.text = "Welcome, \(name)!"
     }
     
     
