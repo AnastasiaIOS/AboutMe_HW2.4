@@ -64,13 +64,13 @@
 		5D02058827C26BC000A896FF /* LogInOut_HW2.3 */ = {
 			isa = PBXGroup;
 			children = (
+				5D02058F27C26BC000A896FF /* Main.storyboard */,
 				5D02059F27C43F6F00A896FF /* WelcomeViewController.swift */,
 				5D02058D27C26BC000A896FF /* LoginViewController.swift */,
+				5DADD95627D4D71300B10DC5 /* AboutMeViewController.swift */,
+				5DADD95827D4D84B00B10DC5 /* ContactsViewController.swift */,
 				5D02058927C26BC000A896FF /* AppDelegate.swift */,
 				5D02058B27C26BC000A896FF /* SceneDelegate.swift */,
-				5D02058F27C26BC000A896FF /* Main.storyboard */,
-				5DADD95827D4D84B00B10DC5 /* ContactsViewController.swift */,
-				5DADD95627D4D71300B10DC5 /* AboutMeViewController.swift */,
 				5D02059227C26BC100A896FF /* Assets.xcassets */,
 				5D02059427C26BC100A896FF /* LaunchScreen.storyboard */,
 				5D02059727C26BC100A896FF /* Info.plist */,
