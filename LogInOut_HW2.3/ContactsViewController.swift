@@ -9,10 +9,12 @@ import UIKit
 
 class ContactsViewController: UIViewController {
 
+    @IBOutlet var phoneLabel: UILabel!
+    @IBOutlet var emailLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       
     }
     
 

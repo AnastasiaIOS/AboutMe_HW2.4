@@ -9,13 +9,16 @@ import UIKit
 
 class AboutMeViewController: UIViewController {
 
+    @IBOutlet var aboutMeLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
     
 
-   
+    @IBAction func goToHobbyButton() {
+    }
+    
 
 }
