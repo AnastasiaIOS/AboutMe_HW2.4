@@ -14,8 +14,10 @@ class ViewController: UIViewController {
     @IBOutlet var passwordTF: UITextField!
     
 // MARK: - PRIVATE PROPERTIES
-     let user = "user"
-     let password = "12345"
+    
+    let abc = appFriend(person: Person)
+    private let user = appFriend.user
+    private let password = "12345"
     
 // MARK: - NAVIGATIONS
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -5,20 +5,40 @@
 //  Created by Anastasia on 03.03.2022.
 //
 
-struct appFriend {
-    let user = "user"
-    let password = "12345"
+struct AppFriend {
+    let user: String
+    let password: String
     let person: Person
+    
+    static func createApp() -> AppFriend {
+        AppFriend(user: "user", password: "12345", person: Person.getPerson())
+    }
 }
 
 struct Person {
-    let name = "Анастасия"
-    let defenition = "Привет! Давай знакомиться! Мои основные увлечения - чтение книг, музыка, горные лыжи. Сейчас осваиваю SWIFT, кажется, теперь это мое 4-е увлечение"
+    let name: String
+    let defenition: String
     let contacts: Contacts
-    let hobby = "Вяжу тапочки котикам"
+    let hobby: String
+    
+    static func getPerson() -> Person {
+        Person(name: "Анастасия",
+               defenition: "Привет! Давай знакомиться! Мои основные увлечения - чтение книг, музыка, горные лыжи. Сейчас осваиваю SWIFT, кажется, теперь это мое 4-е увлечение",
+               contacts: Contacts.getContacts(),
+               hobby: "Вяжу носочки котикам")
+    }
 }
 
 struct Contacts {
-    let phone = "2-25-25-25"
-    let email = "sendMe@mail.ru"
+    let phone: String
+    let email: String
+    
+    static func getContacts() -> Contacts {
+        Contacts(phone: "2-25-25-25",
+                 email: "sendMe@mail.ru")
+    }
 }
+
+
+
+
