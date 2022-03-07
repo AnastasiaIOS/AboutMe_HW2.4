@@ -26,8 +26,10 @@ class ViewController: UIViewController {
     
     // MARK: Navigation
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            let tabBarController = segue.destination as! UITabBarController
-            ...
+          
+            guard let tabBarController = segue.destination as? UITabBarController else { return }
+            guard let viewControllers = tabBarController.viewControllers else { return }
+            
              for viewController in viewControllers {
                 if let welcomeVC = viewController as? WelcomeViewController {
                     

@@ -83,7 +83,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.84557342529296875" green="0.83731168508529663" blue="0.95440512895584106" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="snC-L3-6aG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="78" id="8LE-5h-4Vx"/>
                             <constraint firstItem="snC-L3-6aG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="H0p-AI-ACD"/>
@@ -133,7 +133,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="z9X-qb-Vc7"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="backgroundColor" red="0.75565725564956665" green="0.90833950042724609" blue="0.46319442987442017" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="z9X-qb-Vc7" firstAttribute="bottom" secondItem="e6W-z6-mJn" secondAttribute="bottom" constant="240" id="6jC-vU-iiI"/>
                             <constraint firstItem="e6W-z6-mJn" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qsC-oS-BDr" secondAttribute="bottom" constant="119" id="9kX-QZ-u1a"/>
@@ -396,9 +396,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
