@@ -18,6 +18,7 @@ class ViewController: UIViewController {
    
      let user = AppFriend.createApp().login
      let password = AppFriend.createApp().password
+    let name = Person.getPerson().name
     
 // MARK: - NAVIGATIONS
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -35,8 +36,11 @@ class ViewController: UIViewController {
              for viewController in viewControllers {
                  if let welcomeVC = viewController as? WelcomeViewController {
                     welcomeVC.user = user
-                } else if 
-                 
+                } else if let navigationVC = viewController as? UINavigationController {
+                    let aboutUserVC = navigationVC.topViewController as! AboutMeViewController {
+                        aboutUserVC.name = name
+                    }
+            
             }
            
         }
