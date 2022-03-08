@@ -37,10 +37,8 @@ class ViewController: UIViewController {
                 aboutMeVC.title = name
                 aboutMeVC.defenition = defenition
                 
-            } //else if let hobbyVC = viewController as? HobbyViewController {
-              // hobbyVC.hobby = hobby
-            //}
-            
+            }
+        }
         }
         
     
@@ -84,8 +82,4 @@ class ViewController: UIViewController {
         
     }
 
-
-
-
-
-
+}
