@@ -11,6 +11,7 @@ class WelcomeViewController: UIViewController {
 
     @IBOutlet var labelForWelcome: UILabel!
     var user = ""
+    var name = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()

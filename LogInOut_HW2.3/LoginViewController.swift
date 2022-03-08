@@ -18,32 +18,28 @@ class ViewController: UIViewController {
    
      let user = AppFriend.createApp().login
      let password = AppFriend.createApp().password
-    let name = Person.getPerson().name
-    
-// MARK: - NAVIGATIONS
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-  //      welcomeVC.user = user
- //   }
+     let name = Person.getPerson().name
     
     
     // MARK: Navigation
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-          
-            guard let tabBarController = segue.destination as? UITabBarController else { return }
-            guard let viewControllers = tabBarController.viewControllers else { return }
-            
-             for viewController in viewControllers {
-                 if let welcomeVC = viewController as? WelcomeViewController {
-                    welcomeVC.user = user
-                } else if let navigationVC = viewController as? UINavigationController {
-                    let aboutUserVC = navigationVC.topViewController as! AboutMeViewController {
-                        aboutUserVC.name = name
-                    }
-            
+    override func prepare(for segue:UIStoryboardSegue, sender: Any?) {
+        
+        guard let tabBarController = segue.destination as? UITabBarController else {return}
+        guard let viewControllers = tabBarController.viewControllers else {return}
+        
+        for viewController in viewControllers {
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.user = user
+            } else if let navigationVC = viewController as? UINavigationController {
+                let aboutMeVC = navigationVC.topViewController as! AboutMeViewController
+                aboutMeVC.title = name
+                
             }
-           
+            
         }
+        
+    }
+        
     
     @IBAction func loginButton() {
         if userNameTF.text != user || passwordTF.text != password {
