@@ -10,17 +10,28 @@ import UIKit
 class AboutMeViewController: UIViewController {
 
     @IBOutlet var aboutMeLabel: UILabel!
-    var name = ""
+    
+    var defenition = ""
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // title.self = name
-       // aboutMeLabel.text =
+       
+       aboutMeLabel.text = "\(defenition)"
     }
     
-
-    @IBAction func goToHobbyButton() {
+    /*// MARK: Navigation
+    override func prepare(for segue:UIStoryboardSegue, sender: Any?) {
+        
+        guard let hobbyVC = segue.destination as? HobbyViewController else { return }
+            hobbyVC.hobby = Person.getPerson().hobby
+        }*/
+        
+        
     }
+        
+
+  
     
 
-}
+

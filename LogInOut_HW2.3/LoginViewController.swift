@@ -19,6 +19,8 @@ class ViewController: UIViewController {
      let user = AppFriend.createApp().login
      let password = AppFriend.createApp().password
      let name = Person.getPerson().name
+    let defenition = Person.getPerson().defenition
+   // let hobby = Person.getPerson().hobby
     
     
     // MARK: Navigation
@@ -33,12 +35,15 @@ class ViewController: UIViewController {
             } else if let navigationVC = viewController as? UINavigationController {
                 let aboutMeVC = navigationVC.topViewController as! AboutMeViewController
                 aboutMeVC.title = name
+                aboutMeVC.defenition = defenition
                 
-            }
+            } //else if let hobbyVC = viewController as? HobbyViewController {
+              // hobbyVC.hobby = hobby
+            //}
             
         }
         
-    }
+    
         
     
     @IBAction func loginButton() {
@@ -78,7 +83,7 @@ class ViewController: UIViewController {
         present(alert, animated: true)
         
     }
-}
+
 
 
 
