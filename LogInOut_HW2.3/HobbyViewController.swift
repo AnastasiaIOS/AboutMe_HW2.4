@@ -9,19 +9,4 @@ import UIKit
 
 class HobbyViewController: UIViewController {
     
-    
-    @IBOutlet var nameOfHobbyLabel: UILabel!
-    
-    var hobby = ""
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        nameOfHobbyLabel.text = "\(hobby)"
-        
-    }
-    
-
-    
-
 }

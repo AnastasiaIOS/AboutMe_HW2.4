@@ -20,7 +20,7 @@ class ViewController: UIViewController {
      let password = AppFriend.createApp().password
      let name = Person.getPerson().name
     let defenition = Person.getPerson().defenition
-   // let hobby = Person.getPerson().hobby
+   let hobby = Person.getPerson().hobby
     
     
     // MARK: Navigation
@@ -36,6 +36,8 @@ class ViewController: UIViewController {
                 let aboutMeVC = navigationVC.topViewController as! AboutMeViewController
                 aboutMeVC.title = name
                 aboutMeVC.defenition = defenition
+                aboutMeVC.hobby = hobby
+                
                 
             }
         }

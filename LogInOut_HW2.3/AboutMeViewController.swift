@@ -19,8 +19,13 @@ class AboutMeViewController: UIViewController {
         super.viewDidLoad()
         
         aboutMeLabel.text = "\(defenition)"
-        hobbyLabel.text = "Мое хобби - \(hobby)"
+        hobbyLabel.text = "Мое хобби - \(hobby).Нажми кнопку 'ХОББИ' "
     }
+    
+    @IBAction func goToHobby() {
+    }
+    
+    
 }
         
 

@@ -184,8 +184,8 @@
                                     <color key="baseForegroundColor" systemColor="systemPurpleColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="goToHobbyButton" destination="D4w-Cp-zSO" eventType="touchUpInside" id="fSC-BH-7va"/>
-                                    <segue destination="pMO-iJ-tnJ" kind="presentation" id="d9v-qh-JGC"/>
+                                    <action selector="goToHobby" destination="D4w-Cp-zSO" eventType="touchUpInside" id="9Tc-lF-ukA"/>
+                                    <segue destination="pMO-iJ-tnJ" kind="presentation" id="jdR-08-BHM"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sD-3z-Qgp">
@@ -222,6 +222,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="aboutMeLabel" destination="8PK-zd-n59" id="Pyk-Od-iO2"/>
+                        <outlet property="hobbyLabel" destination="3sD-3z-Qgp" id="gEZ-vX-htc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kHx-Fl-0ss" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
