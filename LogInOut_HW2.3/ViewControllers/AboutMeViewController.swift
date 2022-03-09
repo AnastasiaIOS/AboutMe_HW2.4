@@ -22,7 +22,7 @@ class AboutMeViewController: UIViewController {
         super.viewDidLoad()
         
         aboutMeLabel.text = "\(defenition)"
-        hobbyLabel.text = "Мое хобби - \(hobby).Нажми кнопку 'ХОББИ' "
+        hobbyLabel.text = "А еще,мое хобби - \(hobby).Нажми кнопку 'ХОББИ' "
     }
     
     // MARK: Navigation

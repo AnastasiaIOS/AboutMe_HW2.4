@@ -29,7 +29,7 @@
 		5D02059227C26BC100A896FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D02059527C26BC100A896FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D02059727C26BC100A896FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D02059F27C43F6F00A896FF /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = ../WelcomeViewController.swift; sourceTree = "<group>"; };
+		5D02059F27C43F6F00A896FF /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		5D9A3E0F27D7F5E800043819 /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
 		5DADD95627D4D71300B10DC5 /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 		5DADD95827D4D84B00B10DC5 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
@@ -66,20 +66,52 @@
 		5D02058827C26BC000A896FF /* LogInOut_HW2.3 */ = {
 			isa = PBXGroup;
 			children = (
-				5D02058F27C26BC000A896FF /* Main.storyboard */,
+				5D8FC9BC27D960FD00D635C2 /* ViewControllers */,
+				5D8FC9BD27D9615400D635C2 /* Models */,
+				5D8FC9BE27D9616D00D635C2 /* StoryBoard */,
+				5D8FC9BF27D9618000D635C2 /* App */,
+			);
+			path = LogInOut_HW2.3;
+			sourceTree = "<group>";
+		};
+		5D8FC9BC27D960FD00D635C2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
 				5D02058D27C26BC000A896FF /* LoginViewController.swift */,
 				5D02059F27C43F6F00A896FF /* WelcomeViewController.swift */,
 				5DADD95627D4D71300B10DC5 /* AboutMeViewController.swift */,
 				5D9A3E0F27D7F5E800043819 /* HobbyViewController.swift */,
 				5DADD95827D4D84B00B10DC5 /* ContactsViewController.swift */,
-				5D02058927C26BC000A896FF /* AppDelegate.swift */,
-				5D02058B27C26BC000A896FF /* SceneDelegate.swift */,
-				5D02059227C26BC100A896FF /* Assets.xcassets */,
-				5D02059427C26BC100A896FF /* LaunchScreen.storyboard */,
-				5D02059727C26BC100A896FF /* Info.plist */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5D8FC9BD27D9615400D635C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
 				5DC1EFC627D158830096952C /* ModelPerson.swift */,
 			);
-			path = LogInOut_HW2.3;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5D8FC9BE27D9616D00D635C2 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				5D02058F27C26BC000A896FF /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		5D8FC9BF27D9618000D635C2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5D02058B27C26BC000A896FF /* SceneDelegate.swift */,
+				5D02059227C26BC100A896FF /* Assets.xcassets */,
+				5D02059727C26BC100A896FF /* Info.plist */,
+				5D02059427C26BC100A896FF /* LaunchScreen.storyboard */,
+				5D02058927C26BC000A896FF /* AppDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,7 +342,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LogInOut_HW2.3/Info.plist;
+				INFOPLIST_FILE = LogInOut_HW2.3/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -338,7 +370,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LogInOut_HW2.3/Info.plist;
+				INFOPLIST_FILE = LogInOut_HW2.3/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
