@@ -8,19 +8,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-   
-// MARK: - IB OUTLETS
+    
+    // MARK: - IB OUTLETS
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
-// MARK: - PRIVATE PROPERTIES
+    // MARK: - PRIVATE PROPERTIES
     
-   
-     let user = AppFriend.createApp().login
-     let password = AppFriend.createApp().password
-     let name = Person.getPerson().name
+    
+    let user = AppFriend.createApp().login
+    let password = AppFriend.createApp().password
+    let name = Person.getPerson().name
     let defenition = Person.getPerson().defenition
-   let hobby = Person.getPerson().hobby
+    let hobby = Person.getPerson().hobby
     
     
     // MARK: Navigation
@@ -41,10 +41,9 @@ class ViewController: UIViewController {
                 
             }
         }
-        }
-        
+    }
     
-        
+
     
     @IBAction func loginButton() {
         if userNameTF.text != user || passwordTF.text != password {
@@ -83,5 +82,5 @@ class ViewController: UIViewController {
         present(alert, animated: true)
         
     }
-
+    
 }

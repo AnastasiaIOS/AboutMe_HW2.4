@@ -12,8 +12,14 @@ class ContactsViewController: UIViewController {
     @IBOutlet var phoneLabel: UILabel!
     @IBOutlet var emailLabel: UILabel!
     
+    var phone = ""
+    var email = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        phoneLabel.text = phone
+        emailLabel.text = email
 
     }
     

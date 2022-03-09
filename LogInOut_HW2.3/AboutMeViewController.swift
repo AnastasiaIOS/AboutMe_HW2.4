@@ -15,6 +15,9 @@ class AboutMeViewController: UIViewController {
     var defenition = ""
     var hobby = ""
     
+    let phone = Contacts.getContacts().phone
+    let email = Contacts.getContacts().email
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,32 +28,15 @@ class AboutMeViewController: UIViewController {
     // MARK: Navigation
     override func prepare(for segue:UIStoryboardSegue, sender: Any?) {
         
-        guard let tabBarController = segue.destination as? UITabBarController else {return}
-        guard let viewControllers = tabBarController.viewControllers else {return}
-        
-        for viewController in viewControllers {
-            if let welcomeVC = viewController as? WelcomeViewController {
-                welcomeVC.user = user
-            } else if let navigationVC = viewController as? UINavigationController {
-                let aboutMeVC = navigationVC.topViewController as! AboutMeViewController
-                aboutMeVC.title = name
-                aboutMeVC.defenition = defenition
-                aboutMeVC.hobby = hobby
-                
-                
-            }
-        }
-        }
-        
+        guard let contactsVC = segue.destination as? ContactsViewController else { return }
+        contactsVC.email = email
+        contactsVC.phone = phone
+    }
+}
 
     
     
-    
-    @IBAction func goToHobby() {
-    }
-    
-    
-}
+
         
 
   
